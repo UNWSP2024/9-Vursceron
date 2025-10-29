@@ -9,13 +9,13 @@
 # It should handle any ValueError exceptions that are raised when the items that are read from the file 
 # are converted to a number.
 def sum_numbers_from_file():
-    total_sum = 0
+    item = 0
     try:
         with open("numbers.txt") as f:
             lines = f.readlines()
             for line in lines:
-                total_sum += int(line)
-            print('The sum is', total_sum)
+                item += int(line)
+            print('The sum is', item)
     except FileNotFoundError:
         print("File not found")
     except ValueError:

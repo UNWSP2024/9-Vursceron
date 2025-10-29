@@ -11,7 +11,7 @@ def count_file_lines():
             count += 1
         return count
 number_of_names = count_file_lines()
-print("You have", number_of_names, "names")
+print("There are", number_of_names, "names in names.txt")
 # You don't need to change anything below this line:
 if __name__ == '__main__':
     count_file_lines()

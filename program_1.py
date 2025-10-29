@@ -10,8 +10,9 @@ def count_file_lines():
         for line in f:
             count += 1
         return count
-items = count_file_lines()
-print("There are", items, "names in names.txt")
+
+
 # You don't need to change anything below this line:
 if __name__ == '__main__':
-    count_file_lines()
+    items = count_file_lines()
+    print("There are", items, "names in names.txt")

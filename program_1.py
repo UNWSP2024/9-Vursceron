@@ -5,14 +5,13 @@
 
 def count_file_lines():
     ######################
+    count = 0
     with open ("names.txt", "r") as f:
-        count = 0
         for line in f:
             count += 1
-        return count
 
+    print(f"{count} names in the file.")
 
 # You don't need to change anything below this line:
 if __name__ == '__main__':
-    items = count_file_lines()
-    print("There are", items, "names in names.txt")
+    count_file_lines()

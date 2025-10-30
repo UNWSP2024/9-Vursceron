@@ -15,7 +15,7 @@ def sum_numbers_from_file():
             lines = f.readlines()
             for line in lines:
                 item += int(line)
-            print('The sum is', item)
+            print(f"The sum is {item}")
     except FileNotFoundError:
         print("File not found")
     except ValueError:
